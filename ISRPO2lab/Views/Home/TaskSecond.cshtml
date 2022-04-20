@@ -1,0 +1,22 @@
+﻿@{
+    Random rnd = new Random();
+    int N = rnd.Next(2, 6);
+}
+<div>
+    <p>Всего человек: @N</p>
+
+    <form method="post">
+        @for (int i = 0; i < N; i++)
+        {
+            <input type="text" id="Language"
+                   name="Lang_@i">
+            <label for="Language">Введите число 1 человека  (1 - английский, 2 - немецкий, 3 - французский, 0 - никакой.)</label>
+            <br />
+        }
+
+        <input type="submit" value="Результат" />
+
+    </form>
+
+    <p>Результат: @ViewBag.Result</p>
+</div>

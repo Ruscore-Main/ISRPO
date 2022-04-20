@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div id="TaskFirstSolution">
+    <form method="post">
+        <p>
+            <label>Введите первую сторону треугольника x:</label>
+            <input type="text" name="x" />
+        </p>
+        <p>
+            <label>Введите вторую сторону треугольника y:</label>
+            <input type="text" name="y" />
+        </p>
+        <p>
+            <label>Введите третью сторону треугольника z:</label>
+            <input type="text" name="z" />
+        </p>
+        <p>
+            <input type="submit" value="Вычислить" />
+        </p>
+        <p>
+            <label>Результат:</label>
+            <label>@ViewBag.Result</label>
+        </p>
+    </form>
+</div>
